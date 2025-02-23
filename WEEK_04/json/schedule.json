@@ -1,0 +1,44 @@
+[
+    {
+        "day": "March 1, 2025",
+        "time": "9:00 AM - 10:00 AM",
+        "title": "Registration & Welcome",
+        "track": "General"
+    },
+    {
+        "day": "March 1, 2025",
+        "time": "10:00 AM - 11:00 AM",
+        "title": "Keynote Speech on Emerging Tech Trends",
+        "track": "General"
+    },
+    {
+        "day": "March 1, 2025",
+        "time": "11:30 AM - 1:00 PM",
+        "title": "AI & Machine Learning in 2025",
+        "track": "AI"
+    },
+    {
+        "day": "March 1, 2025",
+        "time": "2:00 PM - 4:00 PM",
+        "title": "Cybersecurity & Ethical Hacking",
+        "track": "Tech Conference"
+    },
+    {
+        "day": "March 2, 2025",
+        "time": "9:00 AM - 10:00 AM",
+        "title": "Networking Breakfast with Tech Leaders",
+        "track": "General"
+    },
+    {
+        "day": "March 2, 2025",
+        "time": "11:30 AM - 1:00 PM",
+        "title": "Startup Innovations in Tech",
+        "track": "Business"
+    },
+    {
+        "day": "March 2, 2025",
+        "time": "2:00 PM - 4:00 PM",
+        "title": "The Future of Quantum Computing",
+        "track": "Tech Conference"
+    }
+]

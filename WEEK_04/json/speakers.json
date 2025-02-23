@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Mr.Kunal Purohit",
+        "role": "Chief Digital Services Officer at Tech Mahindra",
+        "image": "/kunal.jpg",
+        "twitter": "#",
+        "linkedin": "#"
+    },
+    {
+        "name": "Ms.Madhurima Agarwal",
+        "role": "Innovation Leader(Entrepreneur)",
+        "image": "/madhurima.jpg",
+        "twitter": "#",
+        "linkedin": "#"
+    },
+    {
+        "name": "Mr.Suresh Khadakbhavi",
+        "role": "Chief Executive Officer of Digi Yatra",
+        "image": "/suresh.jpg",
+        "twitter": "#",
+        "linkedin": "#"
+    }
+]

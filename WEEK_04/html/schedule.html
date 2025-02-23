@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - InnovateX</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <header id="header-container"></header>
+    <main>
+        <section class="schedule-section">
+            <h2 class="glitch" data-text="Conference Schedule">Conference Schedule</h2>
+            <div class="filter-container">
+                <label for="track-filter">Filter by Track:</label>
+                <select id="track-filter" class="glass-input">
+                    <option value="All">All Tracks</option>
+                    <option value="General">General</option>
+                    <option value="Business">Business & Startups</option>
+                    <option value="AI">Artificial Intelligence</option>
+                    <option value="Tech Conference">Tech Innovations</option>
+                </select>
+            </div>
+            <div id="schedule-container" class="schedule-grid"></div>
+            <div id="master-background"></div>
+        </section>
+    </main>
+    <footer id="footer-container"></footer>
+    <script src="/js/schedule.js"></script>
+    <script src="/js/loader.js"></script>
+</body>
+
+</html>
