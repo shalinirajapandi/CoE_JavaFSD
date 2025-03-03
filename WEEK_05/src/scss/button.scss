@@ -1,0 +1,21 @@
+.primary {
+  background-color: #64748b;
+  color: white;
+  font-weight: bold;
+  padding: {
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  border-radius: 4px;
+
+  margin: {
+    top: 1rem;
+    bottom: 1rem;
+  }
+}
+
+.primary:hover {
+  background-color: #334155;
+}
