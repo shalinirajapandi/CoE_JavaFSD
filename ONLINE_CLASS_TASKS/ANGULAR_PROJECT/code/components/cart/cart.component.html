@@ -1,0 +1,40 @@
+<div class="cart-container">
+  <h2 class="cart-title">SHOPPING CART</h2>
+
+  <!-- Empty Cart Message -->
+  <div *ngIf="cartItems.length === 0" class="empty-cart-message">
+    <p>Your cart is empty.</p>
+  </div>
+
+  <!-- Cart Header -->
+  <div *ngIf="cartItems.length > 0" class="cart-header">
+    <button (click)="clearCart()" class="clear-cart-btn btn btn-warning">Clear Cart</button>
+  </div>
+
+  <!-- Cart Items -->
+  <div class="cart-items-horizontal">
+    <div *ngFor="let item of cartItems" class="cart-item card">
+      <div class="card-body">
+        <img [src]="'http://localhost:8090/' + item.image" [alt]="item.name" class="cart-img card-img-top">
+        <h3 class="card-title">{{ item.name }}</h3>
+        <p class="card-text"><strong>Price: ₹{{ item.price }}</strong></p>
+        <p class="card-text"><strong>Size:</strong> {{ item.selectedSize }}</p>
+
+        <!-- ✅ Display Selected Color -->
+        <div class="color-container">
+          <p><strong>Color:</strong></p>
+          <span class="color-box" [ngStyle]="{'background-color': item.selectedColor}"></span>
+        </div>
+
+        <!-- ✅ Quantity Control -->
+        <div class="quantity-container">
+          <button (click)="decreaseQuantity(item)" class="quantity-btn">-</button>
+          <span class="quantity">{{ item.quantity }}</span>
+          <button (click)="increaseQuantity(item)" class="quantity-btn">+</button>
+        </div>
+
+        <button (click)="removeItem(item.id)" class="remove-btn btn btn-danger">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>

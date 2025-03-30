@@ -1,0 +1,111 @@
+.review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6f7ff; 
+  padding: 20px;
+}
+
+.review-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.review-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #0056b3; 
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.review-card p {
+  font-size: 1rem;
+  color: #333; 
+  margin-bottom: 20px;
+}
+
+.emoji-rating {
+  margin-bottom: 20px;
+}
+
+.emoji-rating p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #007bff; 
+}
+
+.emojis {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.emojis span {
+  transition: transform 0.3s ease;
+}
+
+.emojis span:hover {
+  transform: scale(1.2);
+}
+
+.emojis span.selected {
+  transform: scale(1.2);
+  color: #ffcc00; 
+}
+
+.review-form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  resize: none;
+  background-color: #f0f8ff; 
+  color: #333; 
+}
+
+.review-form textarea:focus {
+  border-color: #76df7d;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #268430; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  background-color: #072302;
+}
+
+.thank-you-message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #4caf50; 
+  font-weight: bold;
+  text-align: center;
+}
+
+.thank-you-message p {
+  margin-bottom: 10px;
+  color: #333;
+}

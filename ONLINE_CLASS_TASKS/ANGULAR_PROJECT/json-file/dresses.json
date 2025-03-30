@@ -1,0 +1,228 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Elegant Evening Gown",
+      "price": 4999,
+      "image": "dress1.jpg",
+      "category": "Party Wear",
+      "description": "A stunning evening gown with intricate detailing."
+    },
+    {
+      "id": "2",
+      "name": "Casual Floral Dress",
+      "price": 1999,
+      "image": "dress2.jpeg",
+      "category": "Casual Wear",
+      "description": "A light and breezy floral dress perfect for summer outings."
+    },
+    {
+      "id": "3",
+      "name": "Formal Blazer Dress",
+      "price": 3499,
+      "image": "dress3.1.jpg",
+      "category": "Formal Wear",
+      "description": "A sophisticated blazer dress ideal for office and meetings."
+    },
+    {
+      "id": "4",
+      "name": "Bohemian Maxi Dress",
+      "price": 2599,
+      "image": "dress4.1.jpeg",
+      "category": "Boho Style",
+      "description": "A flowy maxi dress with vibrant prints."
+    },
+    {
+      "id": "5",
+      "name": "Chic Bodycon Dress",
+      "price": 2999,
+      "image": "dress5.3.jpg",
+      "category": "Party Wear",
+      "description": "A trendy bodycon dress that enhances your curves."
+    },
+    {
+      "id": "6",
+      "name": "Traditional Silk Saree",
+      "price": 5999,
+      "image": "dress6.1.jpg",
+      "category": "Traditional",
+      "description": "A pure silk saree with elegant embroidery."
+    },
+    {
+      "id": "7",
+      "name": "Summer Beach Dress",
+      "price": 1799,
+      "image": "dress7.1.jpg",
+      "category": "Summer Collection",
+      "description": "A comfortable dress perfect for beach vacations."
+    },
+    {
+      "id": "8",
+      "name": "Winter Woolen Dress",
+      "price": 3999,
+      "image": "dress8.1.jpeg",
+      "category": "Winter Collection",
+      "description": "A cozy woolen dress to keep you warm in winter."
+    },
+    {
+      "id": "9",
+      "name": "Sportswear Yoga Set",
+      "price": 2499,
+      "image": "dress9.1.jpg",
+      "category": "Sportswear",
+      "description": "A stretchable and breathable yoga outfit."
+    },
+    {
+      "id": "10",
+      "name": "Western Denim Jacket Dress",
+      "price": 3299,
+      "image": "dress10.1.jpg",
+      "category": "Western Wear",
+      "description": "A stylish denim jacket dress for casual outings."
+    },
+    {
+      "id": "11",
+      "name": "Sequin Party Dress",
+      "price": 4599,
+      "image": "dress11.1.jpg",
+      "category": "Party Wear",
+      "description": "A sparkling dress with sequin embellishments."
+    },
+    {
+      "id": "12",
+      "name": "Casual Cotton Kurti",
+      "price": 1299,
+      "image": "dress12.4.png",
+      "category": "Casual Wear",
+      "description": "A soft and comfortable cotton kurti."
+    },
+    {
+      "id": "13",
+      "name": "Elegant Office Dress",
+      "price": 2899,
+      "image": "dress13.1.jpg",
+      "category": "Formal Wear",
+      "description": "A classy dress perfect for office meetings."
+    },
+    {
+      "id": "14",
+      "name": "Printed Boho Skirt",
+      "price": 1899,
+      "image": "dress14.1.jpg",
+      "category": "Boho Style",
+      "description": "A colorful and flowy boho-style skirt."
+    },
+    {
+      "id": "15",
+      "name": "Designer Lehenga Choli",
+      "price": 7999,
+      "image": "dress15.1.jpg",
+      "category": "Traditional",
+      "description": "A heavily embroidered lehenga choli for weddings."
+    },
+    {
+      "id": "16",
+      "name": "Sundress with Frills",
+      "price": 2199,
+      "image": "dress16.1.jpg",
+      "category": "Summer Collection",
+      "description": "A cute and playful sundress with frill details."
+    },
+    {
+      "id": "17",
+      "name": "Woolen Trench Coat Dress",
+      "price": 5999,
+      "image": "dress17.1.jpg",
+      "category": "Winter Collection",
+      "description": "A stylish and warm trench coat dress."
+    },
+    {
+      "id": "18",
+      "name": "Athleisure Tracksuit",
+      "price": 3499,
+      "image": "dress18.1.jpg",
+      "category": "Sportswear",
+      "description": "A trendy tracksuit for gym and casual wear."
+    },
+    {
+      "id": "19",
+      "name": "Off-Shoulder Midi Dress",
+      "price": 3799,
+      "image": "dress19.1.jpg",
+      "category": "Western Wear",
+      "description": "An elegant off-shoulder midi dress."
+    },
+    {
+      "id": "20",
+      "name": "Tulle Princess Gown",
+      "price": 8999,
+      "image": "dress20.1.jpg",
+      "category": "Party Wear",
+      "description": "A dreamy tulle gown with floral embroidery."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Sarees",
+      "image": "sareeri.jpg",
+      "description": "Traditional and elegant sarees for every special occasion.",
+      "id": "d907"
+    },
+    {
+      "name": "Ethnic Wear",
+      "image": "ethnic.jpeg",
+      "description": "Classic lehengas, kurtis, and other ethnic wear for a festive look.",
+      "id": "f62d"
+    },
+    {
+      "name": "Casual Wear",
+      "image": "casual.jpeg",
+      "description": "Easy-going, comfortable clothing perfect for day-to-day activities.",
+      "id": "3377"
+    },
+    {
+      "name": "Formal Wear",
+      "image": "formal.jpg",
+      "description": "Sophisticated suits, shirts, and dresses for professional and elegant settings.",
+      "id": "56f9"
+    },
+    {
+      "name": "Sports Wear",
+      "image": "sports.jpg",
+      "description": "Durable and fashionable gear designed for athletic performance and comfort.",
+      "id": "5ab8"
+    }
+  ],
+  "enquiries": [
+    {
+      "id": "4408",
+      "name": "Shalini R",
+      "email": "shalinirajapandi@gmail.com",
+      "message": "I'm satisfied with your products but when will I get ?"
+    },
+    {
+      "id": "97a5",
+      "name": "Arjun",
+      "email": "arjun@gmail.com",
+      "message": "The product is damaged, how can i return the product?"
+    },
+    {
+      "id": "36f8",
+      "name": "Rady",
+      "email": "rady@gmail.com",
+      "message": "I want to exchange size "
+    },
+    {
+      "id": "eaa5",
+      "name": "Shalu",
+      "email": "shalz.1623@gmail.com",
+      "message": "when will I get the Product ?"
+    },
+    {
+      "id": "cb73",
+      "name": "Shalu",
+      "email": "shalz.1623@gmail.com",
+      "message": "when will I get the Product ?"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "welcomeTitle": "டைம்ஸ் ஆஃப் இந்தியா உங்களை வரவேற்கிறது",
+  "welcomeSubtitle": "சமீபத்திய செய்திகளுடன் புதுப்பித்துக்கொள்ளுங்கள்!",
+  "@welcomeTitle": {
+    "description": "The title shown on the welcome screen"
+  },
+  "@welcomeSubtitle": {
+    "description": "The subtitle shown on the welcome screen"
+  }
+}

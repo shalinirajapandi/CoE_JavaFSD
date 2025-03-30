@@ -1,0 +1,70 @@
+<div class="shop-container">
+  <h2 class="shop-title">Featured Products</h2>
+
+  <!-- Filter Container -->
+  <div class="filter-container">
+    <!-- Search Bar -->
+    <div class="search-bar">
+  <input type="text" placeholder="Search products..." [(ngModel)]="searchTerm" (input)="applyFilters()">
+  <button class="search-btn">Search</button>
+</div>
+
+    <!-- Category Filter -->
+    <div class="filter-group">
+      <label for="category">Category:</label>
+      <select id="category" [(ngModel)]="selectedCategory" (change)="applyFilters()">
+        <option value="">All Categories</option>
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+    </div>
+
+    <!-- Sort Options -->
+    <div class="filter-group">
+      <label for="sortBy">Sort By:</label>
+      <select id="sortBy" [(ngModel)]="sortOption" (change)="applyFilters()">
+        <option value="nameAsc">Name (A-Z)</option>
+        <option value="nameDesc">Name (Z-A)</option>
+        <option value="priceLow">Price (Low to High)</option>
+        <option value="priceHigh">Price (High to Low)</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Results Info -->
+  <div class="results-info">
+    <p>Showing {{ filteredProducts.length }} of {{ products.length }} products</p>
+  </div>
+
+  <!-- Product List -->
+  <div class="product-list">
+    <div *ngFor="let product of filteredProducts" class="product-card">
+      <img [src]="'http://localhost:8090/' + product.image" [alt]="product.name" class="card-img-top">
+      <div class="card-body">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p><strong>Price: ₹{{ product.price }}</strong></p>
+        <a [routerLink]="['/product', product.id]" class="view-details-btn">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div class="empty-state" *ngIf="filteredProducts.length === 0 && !isLoading">
+    <h3>No products found</h3>
+    <p>Try adjusting your search or filter criteria</p>
+    <button class="reset-btn" (click)="resetFilters()">Reset Filters</button>
+  </div>
+
+  <!-- Loading State -->
+  <div class="loading-spinner" *ngIf="isLoading">
+    <div class="spinner"></div>
+    <p>Loading products...</p>
+  </div>
+</div>
+
+<footer>
+<div class="footer-bottom">
+<p>&copy; 2025 Vogue Attire. All Rights Reserved.</p>
+<p>Designed with ♥ for elegant fashion</p>
+</div>
+</footer>

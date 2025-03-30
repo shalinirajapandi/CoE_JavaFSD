@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 class="title">CUSTOMER ENQUIRIES</h2>
+  <div class="row justify-content-center" *ngIf="enquiries.length > 0">
+    <div class="col-md-8 mb-3" *ngFor="let enquiry of enquiries">
+      <div class="card enquiry-card">
+        <div class="card-body">
+          <h5 class="card-title">{{ enquiry.name }}</h5>
+          <h6 class="card-subtitle mb-2">{{ enquiry.email }}</h6>
+          <p class="card-text">{{ enquiry.message }}</p>
+          
+          <textarea [(ngModel)]="enquiry.response" placeholder="Write your response here..." class="response-textarea"></textarea>
+          <button (click)="sendResponse(enquiry)" class="response-btn">Add Comments</button>
+
+          <div *ngIf="enquiry.sentResponse" class="response-display">
+            <strong>Response:</strong>
+            <p>{{ enquiry.sentResponse }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

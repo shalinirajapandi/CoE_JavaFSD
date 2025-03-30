@@ -1,0 +1,10 @@
+{
+  "welcomeTitle": "TIMES OF INDIA WELCOMES YOU",
+  "welcomeSubtitle": "Stay updated with the latest news!",
+  "@welcomeTitle": {
+    "description": "The title shown on the welcome screen"
+  },
+  "@welcomeSubtitle": {
+    "description": "The subtitle shown on the welcome screen"
+  }
+}

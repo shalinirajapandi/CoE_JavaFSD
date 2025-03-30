@@ -1,0 +1,230 @@
+/* signin.component.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #eef1f5 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.background-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.dress-icon {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 15s infinite ease-in-out;
+}
+
+.dress-1 {
+  top: 15%;
+  left: 10%;
+  font-size: 3rem;
+  animation-delay: 0s;
+  transform: rotate(-10deg);
+}
+
+.dress-2 {
+  top: 70%;
+  left: 15%;
+  font-size: 2.5rem;
+  animation-delay: 2s;
+  transform: rotate(15deg);
+}
+
+.dress-3 {
+  top: 25%;
+  right: 12%;
+  font-size: 3.5rem;
+  animation-delay: 1s;
+  transform: rotate(5deg);
+}
+
+.dress-4 {
+  bottom: 20%;
+  right: 18%;
+  font-size: 2.8rem;
+  animation-delay: 3s;
+  transform: rotate(-5deg);
+}
+
+.signin-form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.signin-form h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.signin-form h2:after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #48829f, #092f65);
+  bottom: -8px;
+  left: 20%;
+  border-radius: 2px;
+  transform-origin: left;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.form-group input:focus {
+  border-color: #48829f;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(72, 130, 159, 0.2);
+  background-color: #fff;
+}
+
+.signin-btn {
+  background: linear-gradient(45deg, #48829f, #092f65);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(9, 47, 101, 0.2);
+}
+
+.signin-btn:hover {
+  background: linear-gradient(45deg, #092f65, #48829f);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(9, 47, 101, 0.25);
+}
+
+.signin-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(9, 47, 101, 0.2);
+}
+
+.signup-text {
+  margin-top: 25px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.signup-text a {
+  color: #48829f;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.signup-text a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #48829f;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.signup-text a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  animation: pulse 2s infinite;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #092f65;
+  letter-spacing: 1px;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,32 @@
+<!-- signin.component.html -->
+<div class="signin-container">
+  <div class="background-elements">
+    <div class="dress-icon dress-1">👗</div>
+    <div class="dress-icon dress-2">👚</div>
+    <div class="dress-icon dress-3">👘</div>
+    <div class="dress-icon dress-4">👗</div>
+  </div>
+  
+  <div class="signin-form" [@fadeIn]>
+    <div class="brand-name" [@fadeIn]>VOGUE ATTIRE</div>
+    <h2>Welcome Back</h2>
+    
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group" [@slideIn]>
+        <label for="username">Username</label>
+        <input type="text" id="username" [(ngModel)]="username" name="username" required>
+        <p class="error-message" *ngIf="usernameError" [@shake]>Please enter a valid username</p>
+      </div>
+      
+      <div class="form-group" [@slideIn]>
+        <label for="password">Password</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" required>
+        <p class="error-message" *ngIf="passwordError" [@shake]>Please enter your password</p>
+      </div>
+      
+      <button type="submit" class="signin-btn" [@fadeInUp]>Sign In</button>
+    </form>
+    
+    <p class="signup-text" [@fadeIn]>Don't have an account? <a routerLink="/signup">Create One</a></p>
+  </div>
+</div>

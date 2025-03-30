@@ -1,0 +1,29 @@
+<div class="review-container">
+  <div class="review-card">
+    <h2>Leave a Review</h2>
+    <p>We'd love to hear your thoughts! Share your experience with us in a fun way.</p>
+
+    <div class="emoji-rating">
+      <p>How was your experience?</p>
+      <div class="emojis">
+        <span (click)="selectEmoji('😠')" [class.selected]="selectedEmoji === '😠'">😠</span>
+        <span (click)="selectEmoji('😕')" [class.selected]="selectedEmoji === '😕'">😕</span>
+        <span (click)="selectEmoji('😐')" [class.selected]="selectedEmoji === '😐'">😐</span>
+        <span (click)="selectEmoji('😊')" [class.selected]="selectedEmoji === '😊'">😊</span>
+        <span (click)="selectEmoji('😍')" [class.selected]="selectedEmoji === '😍'">😍</span>
+      </div>
+    </div>
+
+    <div class="review-form">
+      <textarea [(ngModel)]="reviewText" placeholder="Tell us more about your experience..."></textarea>
+      <button (click)="submitReview()" class="submit-btn">Submit Review</button>
+    </div>
+
+    <div *ngIf="submitted" class="thank-you-message">
+    <p>Thank you, {{ username }}! 🎉</p>
+  <p>We appreciate your feedback and will use it to improve our services.</p>
+  <p>Review submitted on: {{ reviewDate | date:'fullDate' }}</p>
+  <p>Your Rating: {{ selectedEmoji | emojiDescription }}</p>
+</div>
+  </div>
+</div>

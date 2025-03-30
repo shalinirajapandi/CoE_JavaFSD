@@ -1,0 +1,52 @@
+.size-options .btn {
+    margin: 5px;
+  }
+  
+  .size-options .btn.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .color-circle.active {
+    border: 2px solid #007bff;
+  }
+  
+  .color-circle:hover {
+    transform: scale(1.2);
+  }
+  
+  .extra-features ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .extra-features li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .price {
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .text-success {
+    color: #28a745 !important;
+    font-weight: bold;
+  }

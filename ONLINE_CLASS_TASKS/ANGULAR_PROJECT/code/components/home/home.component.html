@@ -1,0 +1,82 @@
+<div class="home-container">
+  <div class="hero-section">
+    <h1 class="main-title">Welcome to Vogue Attire</h1>
+    <p class="tagline">Discover our exclusive collections crafted for elegance and style.</p>
+    <button class="shop-now-btn" [routerLink]="['/shop']">Shop Now</button>
+  </div>
+  <div class="featured-banner">
+    <p>Free shipping on orders over $100 | Use code ELEGANT25 for 25% off</p>
+  </div>
+
+  <div class="collections-container">
+    <h2 class="section-title">Our Collections</h2>
+    
+    <div class="collections" *ngIf="collections.length > 0; else noCollections">
+      <div class="collection-card" *ngFor="let collection of collections">
+        <div class="card-image-container">
+          <img [src]="'http://localhost:8090/' + collection.image" [alt]="collection.name" class="collection-image">
+          <div class="overlay">
+            <button class="view-collection-btn" [routerLink]="['/shop']">View Collection</button>
+          </div>
+        </div>
+        <h3 class="collection-name">{{ collection.name }}</h3>
+        <p class="collection-description">{{ collection.description }}</p>
+      </div>
+    </div>
+
+    <ng-template #noCollections>
+      <p class="no-collections">No collections found. Check back soon for our latest designs.</p>
+    </ng-template>
+  </div>
+
+  <div class="testimonials-section">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"The quality of fabrics and attention to detail is exceptional. My saree from Vogue Attire was the highlight of the wedding."</p>
+        <p class="customer-name">- Priya S.</p>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Elegant designs that combine tradition with modern style. I always find something unique here."</p>
+        <p class="customer-name">- Anjali R.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>About Vogue Attire</h3>
+        <p>Celebrating tradition with a modern twist. Our curated collections bring elegance to every occasion.</p>
+      </div>
+      
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a routerLink='/home'>Home</a></li>
+          <li><a routerLink='/shop'>Products</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a routerLink='/contactus'>Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Phone: +91 9876543210</p>
+        <p>Email: info&#64;vogueattire.com</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/vogueattire.official/">Facebook</a>
+          <a href="https://www.instagram.com/vogue.attire/">Instagram</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vogue Attire. All Rights Reserved.</p>
+      <p>Designed with ♥ for elegant fashion</p>
+    </div>
+  </footer>
+</div>

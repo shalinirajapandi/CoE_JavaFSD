@@ -1,0 +1,57 @@
+<div class="container mt-4">
+  <div *ngIf="product; else loading" class="row">
+    <div class="col-md-6">
+      <img [src]="'http://localhost:8090/' + product.image" class="img-fluid" [alt]="product.name">
+    </div>
+    <div class="col-md-6">
+      <h2>{{ product.name }}</h2>
+      <p class="text-muted"><strong>Category:</strong> {{ product.category }}</p>
+      <p>{{ product.description }}</p>
+
+      <h4 class="price">₹{{ product.price }}</h4>
+      <p *ngIf="product.offer" class="text-success"><strong>Special Offer:</strong> {{ product.offer }}</p>
+
+      <div class="sizes mt-4">
+        <h5>Available Sizes</h5>
+        <div class="size-options">
+          <button
+            *ngFor="let size of sizes"
+            class="btn btn-outline-secondary btn-sm me-2"
+            [class.active]="size === selectedSize"
+            (click)="selectSize(size)"
+          >
+            {{ size }}
+          </button>
+        </div>
+      </div>
+
+      <div class="colors mt-4">
+        <h5>Available Colors</h5>
+        <div class="color-options">
+          <div
+            *ngFor="let color of colors"
+            class="color-circle"
+            [ngStyle]="{ 'background-color': color }"
+            [class.active]="color === selectedColor"
+            (click)="selectColor(color)"
+          ></div>
+        </div>
+      </div>
+
+      <div class="extra-features mt-4">
+        <h5>Extra Features</h5>
+        <ul>
+          <li *ngFor="let feature of extraFeatures">{{ feature }}</li>
+        </ul>
+      </div>
+
+      <button class="btn btn-primary mt-4" (click)="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <div class="text-center mt-5">
+      <p>Loading product details...</p>
+    </div>
+  </ng-template>
+</div>

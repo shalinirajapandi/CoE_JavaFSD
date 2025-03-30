@@ -1,0 +1,42 @@
+.navbar {
+    padding: 8px 10px; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0; 
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 3px; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-left: 0; 
+}
+
+.logo {
+    width: 120px; 
+    height: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.nav-link {
+    font-weight: bold;
+    color: white !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: lightgray !important;
+}

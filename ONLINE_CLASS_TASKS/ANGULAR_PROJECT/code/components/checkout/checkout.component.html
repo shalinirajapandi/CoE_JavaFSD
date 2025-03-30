@@ -1,0 +1,30 @@
+<div class="checkout-container">
+  <h2 class="title">Checkout</h2>
+
+  <div class="checkout-items">
+    <div *ngFor="let item of checkoutItems; let i = index" class="checkout-item">
+      <img [src]="'http://localhost:8090/' + item.image" [alt]="item.name">
+      <div class="item-details">
+        <h3>{{ item.name }}</h3>
+        <p><strong>Price: ₹{{ item.price }}</strong></p>
+        <p><strong>Size:</strong> {{ item.selectedSize }}</p>
+        <p><strong>Color:</strong> 
+          <span [ngStyle]="{'background-color': item.selectedColor}" class="color-box"></span>
+        </p>
+
+        <div class="quantity-container">
+          <button (click)="decreaseQuantity(item)" class="quantity-btn">-</button>
+          <span class="quantity-value">{{ item.quantity }}</span>
+          <button (click)="increaseQuantity(item)" class="quantity-btn">+</button>
+        </div>
+      </div>
+
+      <button (click)="removeItem(i)" class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+  <div class="checkout-summary">
+    <h3>Total Amount: ₹{{ totalAmount }}</h3>
+    <button (click)="placeOrder()" class="checkout-btn">Place Order</button>
+  </div>
+</div>
